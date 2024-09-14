@@ -24,6 +24,7 @@ kubectl apply -f website1-service.yaml
 
 # apply ingress.yml place in host-based/path-based-routing folder each
 kubectl apply -f ingress.yml
+
 kubectl apply -f ingress_path_tls.yml
 
 ### Ingress:
