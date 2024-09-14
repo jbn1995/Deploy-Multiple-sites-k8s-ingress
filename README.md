@@ -31,6 +31,7 @@ kubectl apply -f ingress_path_tls.yml
 Ensure you have an Ingress controller installed in your Kubernetes cluster. For this repository, we use the Nginx Ingress controller.
 Configure Path-Based and Host-Based Routing
     Path-Based Routing: Set up an Ingress resource to route traffic based on URL paths.
+    
     Host-Based Routing: Configure an Ingress resource to route traffic based on hostnames.
 
 Create a TLS Secret with your SSL certificate and private key.
@@ -42,6 +43,7 @@ Create a TLS Secret with your SSL certificate and private key.
 - Add any additional setup or deployment instructions specific to your project.
 
 Feel free to modify and expand this template to fit your needs!
+
 Feel free to fork this repository and submit pull requests with improvements or additional features.
 
 
