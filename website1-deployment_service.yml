@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website1-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: website1
+  template:
+    metadata:
+      labels:
+        app: website1
+    spec:
+      containers:
+      - name: website1
+        image: jabin95/kool_form_website:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: website1-service
+spec:
+  selector:
+    app: website1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP

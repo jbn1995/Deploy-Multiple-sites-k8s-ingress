@@ -1,0 +1,58 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: website1-path-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+  - hosts:
+    - website1.local
+    secretName: website1-tls
+  rules:
+  - host: website1.local
+    http:
+      paths:
+      - path: /register.html
+        pathType: Prefix
+        backend:
+          service:
+            name: website1-service
+            port:
+              number: 80
+      - path: /login.html
+        pathType: Prefix
+        backend:
+          service:
+            name: website1-service
+            port:
+              number: 80
+      - path: /password-reset.html
+        pathType: Prefix
+        backend:
+          service:
+            name: website1-service
+            port:
+              number: 80
+      - path: /404.html
+        pathType: Prefix
+        backend:
+          service:
+            name: website1-service
+            port:
+              number: 80
+      - path: /contact.html
+        pathType: Prefix
+        backend:
+          service:
+            name: website1-service
+            port:
+              number: 80
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: website1-service
+            port:
+              number: 80
+
