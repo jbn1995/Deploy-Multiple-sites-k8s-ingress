@@ -25,6 +25,7 @@ kubectl apply -f website1-deployment.yaml
 kubectl apply -f website1-service.yaml
 
 # apply ingress.yml place in host-based/path-based-routing folder each
+
 kubectl apply -f ingress.yml
 
 kubectl apply -f ingress_path_tls.yml
@@ -40,7 +41,7 @@ Configure Path-Based and Host-Based Routing
 Create a TLS Secret with your SSL certificate and private key.
 
 ### Jenkins:
-	You can also use Jenkins to automate the deployment process into kubernetes environment by used 'Jenkinsfile'
+    You can also use Jenkins to automate the deployment process into kubernetes environment by used 'Jenkinsfile'
 
 ### Notes:
 
