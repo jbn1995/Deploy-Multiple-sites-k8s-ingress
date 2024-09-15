@@ -11,6 +11,7 @@ This repository demonstrates the deployment of multiple websites on Kubernetes u
 - Docker (for building images, if needed)
 - Helm (optional, for managing Kubernetes applications)
 - A domain for host-based routing (e.g., `website1.local`)
+- Jenkins CI/CD
 
 ## Getting Started
 
@@ -37,6 +38,9 @@ Configure Path-Based and Host-Based Routing
     Host-Based Routing: Configure an Ingress resource to route traffic based on hostnames.
 
 Create a TLS Secret with your SSL certificate and private key.
+
+### Jenkins:
+	You can also use Jenkins to automate the deployment process into kubernetes environment by used 'Jenkinsfile'
 
 ### Notes:
 
