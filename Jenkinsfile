@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('Pull code from github'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/develop']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/jbn1995/multis-site-k8s-ingress-project.git']]])
+                checkout(git branch: 'main', url: 'https://github.com/jbn1995/multis-site-k8s-ingress-project.git')
             
             }
         }
