@@ -6,7 +6,7 @@ This repository demonstrates the deployment of multiple websites on Kubernetes u
 
 ## Prerequisites
 
-- Kubernetes cluster (Minikube or another Kubernetes provider)
+- Kubernetes cluster (Minikube or K3S or another Kubernetes provider)
 - kubectl command-line tool
 - Docker (for building images, if needed)
 - Helm (optional, for managing Kubernetes applications)
@@ -43,11 +43,17 @@ Create a TLS Secret with your SSL certificate and private key.
 ### Jenkins:
     You can also use Jenkins to automate the deployment process into kubernetes environment by used 'Jenkinsfile'
 
+### Access websites Through Browser
+- Configure your windows hosts file to enable the access to the both websites (C:\Windows\System32\drivers\etc\hosts) by using      administrative privileges.
+  '''bash
+      <your server ip> website1.local website2.local
+  '''
 ### Notes:
 
 - Customize the paths and hostnames according to your setup.
 - Ensure your Ingress YAML files and certificate files are correctly named and located.
 - Add any additional setup or deployment instructions specific to your project.
+  
 
 Feel free to modify and expand this template to fit your needs!
 
