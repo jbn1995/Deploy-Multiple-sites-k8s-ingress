@@ -44,7 +44,7 @@ Create a TLS Secret with your SSL certificate and private key.
     You can also use Jenkins to automate the deployment process into kubernetes environment by used 'Jenkinsfile'
 
 ### Access websites Through Browser
-- Configure your windows hosts file to enable the access to the both websites (C:\Windows\System32\drivers\etc\hosts) by using      administrative privileges.   "<your server ip> website1.local website2.local"
+- Configure your windows hosts file to enable the access to the both websites (C:\Windows\System32\drivers\etc\hosts) by using      administrative privileges.   "your-server-ip website1.local website2.local"
   
 ### Notes:
 
