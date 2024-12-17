@@ -47,7 +47,7 @@ Create a TLS Secret with your SSL certificate and private key.
 - Configure your windows hosts file to enable the access to the both websites (C:\Windows\System32\drivers\etc\hosts) by using      administrative privileges.
   '''bash
       <your server ip> website1.local website2.local
-  '''
+  
 ### Notes:
 
 - Customize the paths and hostnames according to your setup.
