@@ -39,15 +39,18 @@ Configure Path-Based and Host-Based Routing
     Host-Based Routing: Configure an Ingress resource to route traffic based on hostnames.
 
 ### Create a TLS Secret with your SSL certificate and private key.
-'''bash
+    ```bash
     kubectl create secret tls website1-tls   --cert=tls.crt   --key=tls.key
+    ```
     
 ### Jenkins:
     You can also use Jenkins to automate the deployment process into kubernetes environment by used 'Jenkinsfile'
 
 ### Access websites Through Browser
-- Configure your windows hosts file to enable the access to the both websites (C:\Windows\System32\drivers\etc\hosts) by using      administrative privileges.   "your-server-ip website1.local website2.local"
-  
+- Configure your windows hosts file to enable the access to the both websites (C:\Windows\System32\drivers\etc\hosts) by using      administrative privileges.
+```bash
+ "your-server-ip website1.local website2.local"
+```  
 ### Notes:
 
 - Customize the paths and hostnames according to your setup.
